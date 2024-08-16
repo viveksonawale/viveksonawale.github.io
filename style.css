@@ -47,7 +47,7 @@ body {
     display: flex;
     height: 100vh;
     background: url('background.jpg') no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     align-items: center;
     padding: 0 10%;
@@ -95,4 +95,14 @@ body {
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        zoom: 0.5;
+        /* Adjust zoom to fit content in mobile screen */
+        /* or force desktop layout styles */
+        width: 1024px;
+        overflow-x: scroll;
+    }
 }
