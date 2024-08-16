@@ -96,13 +96,3 @@ body {
     font-weight: 600;
     letter-spacing: 1px;
 }
-
-@media only screen and (max-width: 768px) {
-    body {
-        zoom: 0.5;
-        /* Adjust zoom to fit content in mobile screen */
-        /* or force desktop layout styles */
-        width: 1024px;
-        overflow-x: scroll;
-    }
-}
