@@ -1,46 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>codeByVivek</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts Section -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="PortfolioLogo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="PortfolioLogo.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="PortfolioLogo.png" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivek - Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <!-- Creating Header for PortFolio inside it creating logo and nav options -->
+  <body>
     <header class="header">
-        <a href="#" class="logo">Vivek.</a>
-        <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Service</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
-        </nav>
+      <a href="#home" class="logo">codeBy<span>Vivek</span></a>
+      <i class='bx bx-menu-alt-right' id="menu-icon" alt="Menu Icon" ></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#education">Education</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
-    <section class="home">
-        <div class="home-content">
-            <h1>
-                Hi, I'm Vivek Sonawale
-            </h1>
-            <h3>FullStack Developer</h3>
-            <p>I am a versatile full stack developer with expertise in Core Java, Spring, HTML, CSS, and JavaScript. I
-                have a strong foundation in both front-end and back-end technologies, enabling me to build robust and
-                dynamic web applications. Additionally, I possess video editing skills, allowing me to create engaging
-                multimedia content. My passion for technology drives me to continuously learn and apply new skills in my
-                projects.</p>
-            <div class="btn-box">
-                <a href="#">Hire Me</a>
-                <a href="#">Let's Talk</a>
-            </div>
-        </div>
-    </section>
-</body>
 
+    <!-- Home Section -->
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h1>Hi, It's <span>Vivek</span></h1>
+        <h3 class="text-animation">I'm a <span></span></h3>
+        <p>
+          I specialize in backend development with <b>Java</b> and
+          <b>Spring Boot</b>, creating efficient and reliable applications. As a
+          video editor, I craft engaging content using <b>CapCut</b>, combining
+          creativity and precision to bring ideas to life.
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+          <a href="#"><i class="bx bxl-github"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+        </div>
+        <div class="button-group">
+          <a href="#" class="button">Hire Me</a>
+          <a href="#" class="button">Contact</a>
+        </div>
+      </div>
+      <div class="home-image">
+        <img src="2.jpeg" alt="Profile Image" />
+      </div>
+    </section>
+
+    <!-- Education Section -->
+
+    <section class="education" id="education">
+      <h2 class="heading">Education</h2>
+      <div class="timeline-items">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2021</div>
+          <div class="timeline-content">
+            <h3>Diploma</h3>
+            <p>
+              I have completed my diploma in <b>Information Technology</b>.
+              During this program, I learned programming languages like C, C++,
+              PHP, Python, JavaScript, and essential subjects such as Operating
+              Systems, DBMS, and digital techniques.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2022</div>
+          <div class="timeline-content">
+            <h3>Internship</h3>
+            <p>
+              I have completed an internship where I gained hands-on experience
+              in real-world projects, focusing on development and teamwork.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024-2026</div>
+          <div class="timeline-content">
+            <h3>Pursuing Computer Engineering</h3>
+            <p>
+              I am currently pursuing a degree in Computer Engineering,
+              enhancing my technical skills and working on various academic
+              projects.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2024</div>
+          <div class="timeline-content">
+            <h3>Freelance</h3>
+            <p>
+              I have worked as a freelancer, using my skills in programming and
+              video editing to assist clients with their projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <h2 class="heading">Services</h2>
+      <div class="services-container">
+        <div class="service-box">
+          <div class="service-info">
+            <h4>Java Devloper</h4>
+            <p>
+              Success comes to those who work hard, stay focused, and remain
+              dedicated to their goals. Challenges may arise, but perseverance
+              and determination can overcome any obstacle. Believe in yourself,
+              stay positive, and never stop learning. Every small step you take
+              today will lead to the greater achievements of tomorrow.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="service-info">
+            <h4>Video Editing</h4>
+            <p>
+              Success comes to those who work hard, stay focused, and remain
+              dedicated to their goals. Challenges may arise, but perseverance
+              and determination can overcome any obstacle. Believe in yourself,
+              stay positive, and never stop learning. Every small step you take
+              today will lead to the greater achievements of tomorrow.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials-box">
+        <h2 class="heading">Testimonials</h2>
+
+        <div class="wrapper">
+          <div class="testimonial-item">
+            <img src="1.jpeg" alt="" />
+            <h2>Okarun</h2>
+            <div class="rating">
+              <i class="bx bxs-star" id="star"></i>
+              <i class="bx bxs-star" id="star"></i>
+              <i class="bx bxs-star" id="star"></i>
+              <i class="bx bxs-star" id="star"></i>
+              <i class="bx bxs-star" id="star"></i>
+            </div>
+            <p>
+              "Success comes to those who work hard, stay focused, and remain
+              dedicated to their goals. Challenges may arise, but perseverance
+              and determination can overcome any obstacle. Believe in yourself,
+              stay positive, and never stop learning. Every small step you take
+              today will lead to the greater achievements of tomorrow."
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="4.jpeg" alt="" />
+            <h2>Eren yager</h2>
+            <div class="rating">
+              <i class="bx bxs-star" id="star"></i>
+              <i class="bx bxs-star" id="star"></i>
+              <i class="bx bxs-star" id="star"></i>
+              <i class="bx bxs-star" id="star"></i>
+              <i class="bx bxs-star" id="star"></i>
+            </div>
+            <p>
+              "Success comes to those who work hard, stay focused, and remain
+              dedicated to their goals. Challenges may arise, but perseverance
+              and determination can overcome any obstacle. Believe in yourself,
+              stay positive, and never stop learning. Every small step you take
+              today will lead to the greater achievements of tomorrow."
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="5.jpeg" alt="" />
+            <h2>Loki</h2>
+            <div class="rating">
+              <i class="bx bxs-star" id="star"></i>
+              <i class="bx bxs-star" id="star"></i>
+              <i class="bx bxs-star" id="star"></i>
+              <i class="bx bxs-star" id="star"></i>
+              <i class="bx bxs-star" id="star"></i>
+            </div>
+            <p>
+              "Success comes to those who work hard, stay focused, and remain
+              dedicated to their goals. Challenges may arise, but perseverance
+              and determination can overcome any obstacle. Believe in yourself,
+              stay positive, and never stop learning. Every small step you take
+              today will lead to the greater achievements of tomorrow."
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="3.jpeg" alt="" />
+            <h2>Monkey.D.Luffy</h2>
+            <div class="rating">
+              <i class="bx bxs-star" id="star"></i>
+              <i class="bx bxs-star" id="star"></i>
+              <i class="bx bxs-star" id="star"></i>
+              <i class="bx bxs-star" id="star"></i>
+              <i class="bx bxs-star" id="star"></i>
+            </div>
+            <p>
+              "Success comes to those who work hard, stay focused, and remain
+              dedicated to their goals. Challenges may arise, but perseverance
+              and determination can overcome any obstacle. Believe in yourself,
+              stay positive, and never stop learning. Every small step you take
+              today will lead to the greater achievements of tomorrow."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Me Section -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+      <form action="">
+        <div class="input-group">
+          <div class="input-box">
+            <input type="text" placeholder="Full name" />
+            <input type="email" placeholder="Email" />
+          </div>
+
+          <div class="input-box">
+            <input type="number" placeholder="Phone Number" />
+            <input type="text" placeholder="Subject" />
+          </div>
+        </div>
+        <div class="input-group-2">
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+          ></textarea>
+          <input type="button" value="Send Message" class="button" />
+        </div>
+      </form>
+      <!-- <video src="blackhole.webm"></video> -->
+    </section>
+    <footer class="footer">
+      <div class="social">
+        <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+        <a href="#"><i class="bx bxl-github"></i></a>
+        <a href="#"><i class="bx bxl-instagram"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+      </div>
+      <ul class="list">
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li> <li>
+          <a href="#">About Me</a>
+        </li> <li>
+          <a href="#">Contact Me</a>
+        </li>
+        <li>
+          <a href="#">Testimonials</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        @codeByVivek | All Rights Reserved.
+      </p>
+    </footer>
+    <script></script>
+    <div class="video-background"></div>
+  </body>
 </html>
