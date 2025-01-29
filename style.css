@@ -604,7 +604,7 @@ span {
   font-size: 16px;
   color: white;
 }
-/* 
+
 @media (max-width: 1285px) {
   html {
     font-size: 55%;
@@ -618,7 +618,7 @@ span {
 
 @media (max-width: 991px) {
   header {
-    padding: 2rem 3%;
+    padding: 2rem 10%;
   }
   section {
     padding: 10rem 3% 2rem;
@@ -628,7 +628,7 @@ span {
   }
   .timeline-item:nth-child(odd) {
     padding-right: 0;
-    text-align: 37px;
+    text-align: left;
   }
   .timeline-item:nth-child(odd),
   .timeline-item:nth-child(even) {
@@ -637,8 +637,11 @@ span {
   .timeline-dot {
     left: 0;
   }
+  .timeline-items::before {
+    left: 10px;
+  }
   .services {
-    padding-bottom: 7;
+    padding-bottom: 7rem;
   }
   .testimonials .wrapper {
     grid-template-columns: repeat(1, 1fr);
@@ -648,6 +651,30 @@ span {
   }
   .footer {
     padding: 2rem 3%;
+  }
+  .button {
+    display: inline-block;
+    padding: 8px 7px;
+    background: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    border-radius: 6rem;
+    font-size: 1.6rem;
+    color: black;
+    border: 2px solid transparent;
+    letter-spacing: 0rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .testimonials .heading {
+    margin-bottom: 8rem;
+    font-size: 6rem;
+    font-weight: 400;
+  }
+  service-info h4 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
   }
 }
 
@@ -660,8 +687,8 @@ span {
     top: 100%;
     right: 0;
     width: 50%;
-    padding: 1rem 3%;
-    background: rgba(0, 0, 0, 0.9);
+    padding: 5rem 3%;
+    background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(20px);
     border-bottom-left-radius: 2rem;
     border-left: 2px solid var(--main-color);
@@ -681,92 +708,33 @@ span {
     flex-direction: column-reverse;
     margin: 5rem 4rem;
   }
+  .home logo {
+    margin-left: 12px;
+  }
   .home-content h3 {
     font-size: 2.6rem;
   }
   .home-content h1 {
     font-size: 8rem;
-    margin-top: 3rem;
+    margin-top: 6rem;
   }
-  .home-content p{
+  .home-content p {
     max-width: 600px;
     margin-top: 0 auto;
   }
-  .home-image img{
-    width: 56vw;
+  .home-image img {
+    width: 62vw;
   }
-  .services h2{
+  .services h2 {
     margin-bottom: 3rem;
   }
-  .services-container{
-    grid-template-columns: repeat(1,1fr);
-  }
-
-} */
-
-@media (max-width: 768px) {
-  html {
-    font-size: 50%; /* Reduce base font size */
-  }
-
-  header {
-    padding: 2rem 6%; /* Adjust padding for header */
-  }
-
-  .navbar a {
-    font-size: 1.5rem; /* Smaller font size for navigation links */
-    margin-left: 2rem; /* Adjust spacing */
-  }
-
-  #menu-icon {
-    display: block; /* Display menu icon for smaller screens */
-  }
-
-  .home {
-    flex-direction: column; /* Stack content vertically */
-    gap: 5rem; /* Reduce gap */
-  }
-
-  .home-image {
-    width: 80%; /* Adjust image size */
-    margin: 0 auto; /* Center the image */
-  }
-
-  .home-content h1 {
-    font-size: 5rem; /* Smaller heading */
-  }
-
-  .home-content h3 {
-    font-size: 2.5rem; /* Smaller subheading */
-  }
-
-  .home-content p {
-    font-size: 1.4rem; /* Adjust paragraph font size */
-  }
-
-  .button {
-    padding: 1rem 2rem; /* Smaller buttons */
-    font-size: 1.4rem;
-  }
-
   .services-container {
-    flex-direction: column; /* Stack service boxes vertically */
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
-
-  .testimonial-item {
-    max-width: 90%; /* Limit width */
-    margin: 2rem auto; /* Center the item */
-  }
-
-  .contact form {
-    flex-direction: column; /* Stack form fields vertically */
-    gap: 2rem;
-  }
-
-  .contact form .input-box input,
-  .contact form textarea {
-    font-size: 1.6rem; /* Adjust input size */
-  }
+  service-info h4 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
 }
-
+}
