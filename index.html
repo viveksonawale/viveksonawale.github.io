@@ -31,7 +31,7 @@
         <a href="#education">Education</a>
         <a href="#services">Services</a>
         <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Projects</a>
+        <a href="#projects">Projects</a>
       </nav>
     </header>
 
@@ -164,6 +164,7 @@
     </section>
 
     <!-- Testimonials Section -->
+
     <section class="testimonials" id="testimonials">
       <div class="testimonials-box">
         <h2 class="heading">Testimonials</h2>
@@ -185,7 +186,7 @@
 
           <div class="testimonial-item">
             <img src="shiakh.jpg" alt="" />
-            <h2>Dr Mujahid Shaikh</h2>
+            <h2>Dr.Mujahid Shaikh</h2>
             <div class="rating">
               <i class="bx bxs-star" id="star"></i>
               <i class="bx bxs-star" id="star"></i>
@@ -200,7 +201,7 @@
 
           <div class="testimonial-item">
             <img src="aditi.jpg" alt="" />
-            <h2>Aditi</h2>
+            <h2>Dr.Aditi Hinge</h2>
             <div class="rating">
               <i class="bx bxs-star" id="star"></i>
               <i class="bx bxs-star" id="star"></i>
@@ -218,8 +219,7 @@
   </section>
 
   <!-- Projects Section -->
-
-  <section class="services" id="services">
+  <section class="services" id="projects">
     <h2 class="heading">Projects</h2>
     <div class="services-container">
       <div class="service-box">
@@ -229,15 +229,34 @@
             A Java-based Notepad Clone application with enhanced features like autosave,custom background, and theme options,
             making it more versatile than the standard Windows 10 Notepad.
           </p>
-          <button class="glow-on-hover" type="button">View Project</button>
-          <a href="https://github.com/viveksonawale/Notepad-Clone" target="_blank" class="viewprojects"></a>
+          <div class="container">
+            <div class="center">
+              <button class="btn" onclick="window.open('https://github.com/viveksonawale/Notepad-Clone', '_blank')"> 
+                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+                <span>View Project</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="service-box">
         <div class="service-info">
           <h4>Video Editing</h4>
-          
+          <div class="container1">
+            <div class="center1">
+              <button class="btn1" onclick="window.open('sampleVideos.html', '_blank')"> 
+                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+                <span>Sample Videos</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -276,8 +295,7 @@
             onclick="sendMail()"
           />
         </div>
-      </form>
-      <!-- <video src="blackhole.webm"></video> -->
+      </form> 
     </section>
     <footer class="footer">
       <div class="social">
