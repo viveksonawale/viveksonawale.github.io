@@ -1,11 +1,25 @@
+emailjs.init("-iMv3laRgDdv_z8dZ");
+
 function sendMail() {
   var params = {
-    name: document.getElementById("fullName").value,
-    email: document.getElementById("senderEmail").value,
-    phoneNumber: document.getElementById("sendPhoneNumber").value,
-    subject: document.getElementById("senderSubject").value,
-    emailBody: document.getElementById("senderEmailBody").value,
+    name: document.getElementById("fullName").value.trim(),
+    email: document.getElementById("senderEmail").value.trim(),
+    phoneNumber: document.getElementById("sendPhoneNumber").value.trim(),
+    subject: document.getElementById("senderSubject").value.trim(),
+    emailBody: document.getElementById("senderEmailBody").value.trim(),
+    reply_to: document.getElementById("senderEmail").value.trim(),
   };
+
+  if (
+    !params.name ||
+    !params.email ||
+    !params.phoneNumber ||
+    !params.subject ||
+    !params.emailBody
+  ) {
+    alert("Please fill in all fields before sending.");
+    return;
+  }
 
   const serviceId = "service_mv61a5m";
   const templateId = "template_l6yqrwz";
@@ -13,15 +27,14 @@ function sendMail() {
   emailjs
     .send(serviceId, templateId, params)
     .then((res) => {
-      document.getElementById("fullName").value = "";
-      document.getElementById("senderEmail").value = "";
-      document.getElementById("sendPhoneNumber").value = "";
-      document.getElementById("senderSubject").value = "";
-      document.getElementById("senderEmailBody").value = "";
-      console.log(res);
-      alert("Your Mail Sent Successfully!");
+      document.getElementById("contactForm").reset();
+      console.log("Email sent successfully:", res);
+      alert("Your message has been sent successfully!");
     })
-    .catch((err) => console.log("Error sending email: ", err));
+    .catch((err) => {
+      console.error("Error sending email: ", err);
+      alert("Failed to send email. Please try again.");
+    });
 }
 
 let menuIcon = document.querySelector("#menu-icon");
